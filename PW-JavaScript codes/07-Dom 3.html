@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 3</title>
+</head>
+<body>
+    <h1>hello baccho </h1>
+    <p id="js">namaste baccho</p>
+    <button onclick="hey()" id="jss">submit</button>
+    <script>
+        document.addEventListener("click",hello)// event listener ye batata hai krna kya hai 
+     function hello(p) {
+        document.getElementById("js").innerText="namaste baccho"
+        
+     }
+     function hey(){
+        document.getElementById("jss").innerText="namaste";
+        document.getElementById("jss").style.color="red";
+        document.getElementById("jss").style.backgroundColor ="black";
+        document.getElementById("jss").style.padding="16px"
+        document.getElementById("jss").style.border="2px solid yellow"
+     }
+
+    </script>
+</body>
+</html>
